@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.background-red {
+  background-color: rgba(216, 142, 183, 0.966);
+}
+
+.background-blue {
+  background-color: rgb(152, 206, 235);
+}
