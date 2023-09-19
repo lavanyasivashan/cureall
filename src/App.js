@@ -1,17 +1,18 @@
 
 import './App.css';
 import WelcomeBa from './HomeBake/WelcomeBa';
-import ButtonApp from './HomeBake/NavBa';
+
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Recipes from './HomeBake/Recipes';
-import Shop from './HomeBake/Shop';
+
 import ContactUs from './HomeBake/ContactUs';
-import LoginBa from './HomeBake/LoginBa';
+import Login from './HomeBake/Login';
+import Groupcup from './HomeBake/Groupcup';
+import CupApp from './HomeBake/CupApp';
 
 function App() {
   const isBackgroundRed = true;
    return (
-    
+  
     <div
       style={{
         backgroundColor: isBackgroundRed ? 'lightpink' : 'lightblue',
@@ -19,14 +20,14 @@ function App() {
     >
     <WelcomeBa/>
     
-        <ButtonApp/>
+        
     <BrowserRouter>
       <Routes>
         
-        <Route path="/Recipes" element={<Recipes/>}/>
-        <Route path="/Shop now" element={<Shop/>}/>
-        <Route path="/ContactUs" element={<ContactUs/>}/>
-        <Route path="/Login" element={<LoginBa/>}/>
+        <Route path="/" element={<CupApp/>}/>
+        <Route path="/Shop now" element={<Groupcup/>}/>
+        <Route path="/contact" element={<ContactUs/>}/>
+        <Route path="/login" element={<Login/>}/>
       </Routes>
     </BrowserRouter>
     </div>
